@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/47180be5db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="./Main-Logo.webp" width="175px" class="logo" alt="">
+            <ul id="menu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend developer</p>
+            <h1>Hi,I'm<span >vignesh</span><br>from coimbatore</h1>
+        </div>
+    </div>
+ </div>
+ <!-- about -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/user.jpg" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle">About me</h1>
+                <p>Passionate and detail-oriented Junior Front-End Developer with a strong foundation in 
+                    HTML, CSS, and JavaScript, and experience building responsive, user-friendly web 
+                    applications. Dedicated to writing clean, maintainable code and optimizing websites 
+                    for both performance and accessibility. A quick learner with the ability to adapt to new 
+                    technologies and thrive in collaborative, agile team environments. Actively pursuing 
+                    continuous learning and staying up to date with the latest industry trends.</p>
+                    <div class="tab-tittles">
+                        <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
+                        <P class="tab-links" onclick="opentab('Education')">Education</P>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages:</span><br>HTML|CSS |Javascript</li>
+                            <li><span>Framework & UI: <br></span> React|Bootstrap</li>
+                            <li><span>Design: <br></span> Responsive web design|Flexbox|CSS Grid</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2017 - 2021</span><br>Bachelor Of Engineeering(ECE)</li>
+                            <li><span>2016 - 2017 <br></span>HIGHER SECONDARY</li>
+                            <li><span>2014 - 2015<br></span> SSLC</li>
+                        </ul>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- services -->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-tittle">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-web-awesome"></i>
+                <h2>Web Design</h2>
+                <p>creating the visual layout and aesthetics
+                   of a website,focusing user experience,graphics 
+                   and overall look</p>
+                   <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>creating the visual layout and aesthetics
+                   of a app,focusing user experience,graphics 
+                   and overall look</p>
+                   <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>enhancing user satisfaction and usability by improving
+                   the accessibility, efficiency, and aesthetics of 
+                   the product.</p>
+                   <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- portfolio -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/work-1.png" alt="work-1">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-2.png" alt="work-1">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+   </div>
+   <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> vigneshthirumalaisamy7@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> (+91)956632949</p><br>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vicky_ronaldo_7?igsh=dDBxemoyeHBxMGlj"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/Vicky81357345?t=kLcMji5Tmh_HqwHzvpxsQg&s=09"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="/VIGNESH T FRONT END DEVELOPER RESUME_removed.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; vignesh <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </div>
+ <script src="/javasc.js"></script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyPkD7Wy60uWXKCBIScMpakEyEdxBiuZAt3JtH9LIyO3lw53MwHpJptC5KTKNmoUVPy/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </script>
+</body>
+</html>
